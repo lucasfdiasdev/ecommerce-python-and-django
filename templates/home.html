@@ -25,7 +25,8 @@
 						<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
 						<figcaption class="info-wrap">
 							<a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
-							<div class="price mt-1">R$ {{ product.price }}</div> <!-- price-wrap.// -->
+							<div class="price mt-1 mb-4">R$ {{ product.price }}</div> <!-- price-wrap.// -->
+							<a href="{{ product.get_url }}" class="btn btn-block btn-primary">Ver produto</a>
 						</figcaption>
 					</div>
 				</div> <!-- col.// -->
@@ -72,6 +73,7 @@
 							<a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
 							<div class="price mt-1">R$ {{ product.price }}</div> <!-- price-wrap.// -->
 						</figcaption>
+						<a href="{{ product.get_url }}" class="btn btn-block btn-primary">Ver produto</a>
 					</div>
 				</div> <!-- col.// -->
 				{% endfor %}
